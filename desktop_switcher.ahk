@@ -160,19 +160,29 @@ deleteVirtualDesktop()
 ; Main
 SetKeyDelay, 75
 mapDesktopsFromRegistry()
+
+;Make sure that 10 desktop are created so I can map 1-0 to desktops
+while DesktopCount <= 9
+{
+    createVirtualDesktop()
+}
+
 OutputDebug, [loading] desktops: %DesktopCount% current: %CurrentDesktop%
 
 ; Alternate keys for this config. Adding these because DragonFly (python) doesn't send CapsLock correctly.
-#1::switchDesktopByNumber(1)
-#2::switchDesktopByNumber(2)
-#3::switchDesktopByNumber(3)
-#4::switchDesktopByNumber(4)
-#5::switchDesktopByNumber(5)
-#6::switchDesktopByNumber(6)
-#7::switchDesktopByNumber(7)
-#8::switchDesktopByNumber(8)
-#9::switchDesktopByNumber(9)
-#n::switchDesktopByNumber(CurrentDesktop + 1)
-#p::switchDesktopByNumber(CurrentDesktop - 1)
-#s::switchDesktopByNumber(CurrentDesktop + 1)
-#a::switchDesktopByNumber(CurrentDesktop - 1)
+!1::switchDesktopByNumber(1)
+!2::switchDesktopByNumber(2)
+!3::switchDesktopByNumber(3)
+!4::switchDesktopByNumber(4)
+!5::switchDesktopByNumber(5)
+!6::switchDesktopByNumber(6)
+!7::switchDesktopByNumber(7)
+!8::switchDesktopByNumber(8)
+!9::switchDesktopByNumber(9)
+!9::switchDesktopByNumber(0)
+!n::switchDesktopByNumber(CurrentDesktop + 1)
+!p::switchDesktopByNumber(CurrentDesktop - 1)
+!s::switchDesktopByNumber(CurrentDesktop + 1)
+!a::switchDesktopByNumber(CurrentDesktop - 1)
+!k::switchDesktopByNumber(CurrentDesktop + 1)
+!j::switchDesktopByNumber(CurrentDesktop - 1)
