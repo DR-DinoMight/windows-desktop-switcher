@@ -3,7 +3,8 @@ I wrote this as a quick evening script to solve my problem. If you're looking fo
 https://github.com/sdias/win-10-virtual-desktop-enhancer
 
 # windows-desktop-switcher
-An AutoHotKey script for Windows that lets a user change virtual desktops by pressing Win + &lt;num>. It also allows for creation/deletion of desktops by hotkey (see below).
+An AutoHotKey script for Windows that lets a user change virtual desktops by pressing Alt + &lt;num>. It also allows for creation/deletion of desktops by hotkey (see below).
+I've allowed the script to auto create 10 desktop to make sure that 10 are always created
 
 ## Overview
 This script creates 'better' hotkeys for switching virtual desktops in windows 10. I built this to better mirror
@@ -14,9 +15,9 @@ hotkey support for this feature (for instance, there's no way to go directly to 
 Install AutoHotKey, then run the desktop_switcher.ahk script (open with AutoHotKey if prompted). I would recommend putting it in your startup folder and it'll be invoked on login.
 
 ## Hotkeys
-        <Win> + <Num>      - Switches to virtual desktop "num".
-        <Win> + A or P     - Switch to virtual desktop on left
-        <Win> + S or N     - Switch to virtual desktop on right
+        <Alt> + <Num>      - Switches to virtual desktop "num".
+        <Alt> + A or P or j    - Switch to virtual desktop on left
+        <Alt> + S or N  or k    - Switch to virtual desktop on right
 
 To change the key mappings, modify the bottom of the script and reload. Be sure to read about the [symbols AutoHotKey uses](https://autohotkey.com/docs/Hotkeys.htm) for key mapping.
 
