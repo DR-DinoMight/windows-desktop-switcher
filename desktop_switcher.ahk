@@ -179,7 +179,7 @@ OutputDebug, [loading] desktops: %DesktopCount% current: %CurrentDesktop%
 !7::switchDesktopByNumber(7)
 !8::switchDesktopByNumber(8)
 !9::switchDesktopByNumber(9)
-!9::switchDesktopByNumber(0)
+!0::switchDesktopByNumber(0)
 !n::switchDesktopByNumber(CurrentDesktop + 1)
 !p::switchDesktopByNumber(CurrentDesktop - 1)
 !s::switchDesktopByNumber(CurrentDesktop + 1)
